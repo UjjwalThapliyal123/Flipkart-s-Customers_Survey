@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  fastapi:
+    build:
+      context: ./backend
+    container_name: csat_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/Artifacts:/app/Artifacts
+    networks:
+      - csat_net
+
+  streamlit:
+    build:
+      context: ./frontend
+    container_name: csat_frontend
+    depends_on:
+      - fastapi
+    ports:
+      - "8501:8501"
+    networks:
+      - csat_net
+
+networks:
+  csat_net:
