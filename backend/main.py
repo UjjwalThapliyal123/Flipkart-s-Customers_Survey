@@ -35,10 +35,10 @@ app.add_middleware(
 def load_artifacts():
     global model, binary_encoder, preprocessor
     logger.info("🔧 Loading model and encoders...")
-    model = joblib.load("Artifacts/random_forest.pkl")
-    binary_encoder = joblib.load("Artifacts/binary_encoder.pkl")
-    preprocessor = joblib.load("Artifacts/preprocessor.pkl")
-    logger.info("✅ Artifacts loaded successfully.")
+    model = joblib.load("backend/Artifacts/random_forest.pkl")
+    binary_encoder = joblib.load("backend/Artifacts/binary_encoder.pkl")
+    preprocessor = joblib.load("backend/Artifacts/preprocessor.pkl")
+    logger.info("Artifacts loaded successfully.")
 
 # -------------------- Input Schema --------------------
 class CustomerInput(BaseModel):
