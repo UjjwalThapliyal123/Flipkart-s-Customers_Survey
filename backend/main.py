@@ -141,5 +141,5 @@ def predict(input: CustomerInput):
         }
 
     except Exception as e:
-        logger.error(f"❌ Error during prediction: {e}")
+        logger.error(f" Error during prediction: {e}")
         raise HTTPException(status_code=400, detail=f"Prediction failed: {str(e)}")
