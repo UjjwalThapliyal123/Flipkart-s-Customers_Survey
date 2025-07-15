@@ -1,7 +1,7 @@
 # FlipSatisfy: Customer Satisfaction Prediction for Flipkart Support Interactions
 
 ![FlipSatisfy Logo](https://img.shields.io/badge/ML-Customer%20Satisfaction-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+
 
 ## 🚀 Project Overview
 
