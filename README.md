@@ -36,8 +36,7 @@
 ### 3. Feature Engineering
 
 * Encode categorical fields (e.g., channel, shift, product).
-* Extract sentiment from feedback (optional).
-* Label encode satisfaction as 0/1.
+* Extract text from feedback 
 
 ### 4. Model Building & Evaluation
 
@@ -72,7 +71,7 @@ Models Trained:
 | Data Processing | Pandas, NumPy                                   |
 | ML Models       | Scikit-learn, Decision Tree, RandomForest, etc. |
 | Visualization   | Matplotlib, Seaborn                             |
-| Text Analysis   | TextBlob, NLTK (optional)                       |
+| Text Analysis   | Tfidf Vectorizer                      |
 | API Framework   | FastAPI                                         |
 | Deployment      | Docker, Uvicorn                                 |
 | UI Dashboard    | Streamlit                                       |
