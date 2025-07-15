@@ -9,7 +9,7 @@ st.title("📊 CSAT Score Predictor")
 # -------------------- Load Options --------------------
 @st.cache_data
 def load_options():
-    df = pd.read_csv("Preprocessed Data/Customer.csv")
+    df = pd.read_csv("data/Preprocessed Data/Customer.csv")
     return {
         'channel_name': df['channel_name'].dropna().unique().tolist(),
         'category': df['category'].dropna().unique().tolist(),
