@@ -81,6 +81,8 @@ Models Trained:
 ## 📁 Project Structure
 
 ```bash
+├──Monitoring Dashboard
+├── Streamlit Dashboard
 ├── backend/
 │   ├── Artifacts/              # Saved models and encoders
 │   ├── Dockerfile              # Backend Docker configuration
@@ -93,6 +95,7 @@ Models Trained:
 │
 ├── frontend/
 │   ├── Dockerfile              # Frontend Docker configuration
+│   └── monitoring.py           # Streamlit dashboard for monitoring predictions/logs
 │   ├── requirements.txt        # Streamlit dependencies
 │   └── y.py                    # Streamlit application
 │
